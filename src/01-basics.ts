@@ -1,22 +1,25 @@
-interface Friend {
-    name: string;
-    phone: string;
-    age: number;
-}
+import {Friend, Colleague, ColleagueHistory } from './myTypes'
 
-interface Colleague {
-    name: string;
-    department: string;
-    contact: {
-        email: string;
-        extension: number;
-    };
-}
 
-interface ColleagueHistory {
-    current: Colleague[];
-    former: Colleague[];
-}
+// interface Friend {
+//     name: string;
+//     phone: string;
+//     age: number;
+// }
+
+// interface Colleague {
+//     name: string;
+//     department: string;
+//     contact: {
+//         email: string;
+//         extension: number;
+//     };
+// }
+
+// interface ColleagueHistory {
+//     current: Colleague[];
+//     former: Colleague[];
+// }
 
 const friend1: Friend = {
     name: "Paul Fleming",
@@ -65,4 +68,5 @@ export const colleagues: ColleagueHistory = {
     former: [],
 };
 
-console.log(colleagues.current[0]);
+// console.log(colleagues.current[0]);
+
