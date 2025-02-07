@@ -22,7 +22,13 @@ function addColleague(colleagues, name, department, email) {
     };
     colleagues.push(newColleague);
 }
-
+function addInterest(friend, interest) {
+    if (!friend.interests) {
+        friend.interests = [];
+    }
+    friend.interests.push(interest);
+    return friend.interests;
+}
 
 const friend1: Friend = {
     name: "Paul Fleming",
@@ -63,4 +69,4 @@ function highestExtension(cs: Colleague[]): Colleague {
     return result[cs.length - 1];
   }
   console.log(highestExtension(colleagues.current));
-  
+  console.log(addInterest(friends[0], 'Politics'));
